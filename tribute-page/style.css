@@ -1,0 +1,37 @@
+img{display:block;
+
+height:auto;
+justify-content:center;
+text-align:center;
+margin:auto;}
+
+h1,p{text-align: center;}
+
+.one{height:110px}
+
+#two{text-align: center;
+background-color: rgb(0, 0, 0,0.1);
+height:700px;
+font-size: 20px;
+}
+
+#tribute-info{text-align: center;}
+
+#three{
+    justify-content: center;
+    margin:10px 450px;
+}
+
+body{background-color:darkseagreen}
+
+#four{text-align: center;}
+
+
+p{font-style: italic;
+    font-size: 140%;}
+
+hr{border-color: black;}
+
+h2{font-size: 180%;}
+
+nav{font-size: 140%;}

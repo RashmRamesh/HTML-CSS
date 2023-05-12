@@ -1,0 +1,116 @@
+body{
+    width:100%;
+    margin:0;}
+
+
+
+nav{background-color:brown;
+    text-align:right;
+    padding:12px 16px;
+    position:fixed;
+    width:100%;}
+
+
+a{color:white;
+    text-decoration:none;
+    padding:10px;}
+
+
+#welcome-section{
+    background-color:black;
+    color:white;
+    height:100vh;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    flex-direction:column}
+
+#projects{background-color:DarkCyan;}
+
+#one{color:white;
+    text-align:center}
+
+hr{width:50%}
+
+
+h2{margin:0;}
+
+h1{
+  text-shadow: 2px 2px green;
+  font-size:100px;
+  animation-duration: 3s;
+  animation-name: slidein;
+
+
+}
+
+
+#end{
+    background-color:brown;
+    text-align:center;
+    padding:12px 16px;color:white;}   
+
+h3{color:brown;
+    font-style:italic;
+    font-size:75px;}
+
+#project{background-color:steelblue;
+    height:100vh;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    flex-direction:column}
+
+
+
+
+
+#contact{text-align: center;
+    background-color: brown;
+    color:white;}
+
+.grid{
+
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:16px;
+    padding:20px 10px;
+    
+    }
+    
+    .grid img{
+    
+    width:100%;
+    max-width:350px;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+    }
+
+    section{width:100%}
+
+
+    @keyframes slidein {
+        from {
+        margin-left: 100%;
+        width: 300%;
+        }
+        75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+        }
+        to {
+        margin-left: 0%;
+        width: 100%;
+        }
+        }
+
+
+    
+    
+    
