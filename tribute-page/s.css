@@ -1,0 +1,17 @@
+/* select:hover{background-color: aqua;}
+
+tbody tr:nth-child(odd){
+    background-color: bisque;
+}
+
+div{height: 100px;width: 100px;background-color: red;
+animation:abc;animation-duration: 2s;} */
+
+@keyframes abc{
+    from{
+        margin-right: auto;
+    }
+    to{
+        margin-left: auto;
+    }
+}

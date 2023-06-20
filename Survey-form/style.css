@@ -68,6 +68,19 @@ background-color: transparent;
     #submit:hover{ box-shadow: 0 0 10px 0 #d7d300 inset, 0 0 20px 2px #73d700;
         border: 3px solid #d7b700; }
 
+@media screen and (max-width:400px){
+   
+    form{
+        background-color:black;
+         margin: 1.5em 1.5em  0 1.5em; 
+        width: 200px ;
+        height:auto;
+        color:white;
+        vertical-align: middle;
+        
+    }
+}
+
 
 
 

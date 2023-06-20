@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E commerce</title>
+    <link rel="stylesheet" href="Web.css">
+    <script src="https://kit.fontawesome.com/e156c2aed2.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="image">
+            <img src="/EG logo.png" width="100" height="100" alt="EG">
+            <h4 class="store">GROCERY STORE</h4>
+        </div>
+        <nav class="navbar">
+           <!-- <div>
+
+           </div> -->
+            <a href="#HOME">HOME</a>
+            <a href="#ABOUT">ABOUT</a>
+            <a href="#REVIEW">REVIEW</a>
+            <a href="#CONTACT">CONTACT</a>
+            <button class="login btnLogin-popup"><i class="fa-regular fa-user"></i>LOGIN</button>
+        </nav>   
+
+    </header>
+    <section class="section1" id="HOME">
+        <!-- <span class="welcome"><span>WELCOME</span><br>to our Store 
+       <i class="fa-solid fa-face-grin-hearts"></i></span> -->
+    <div class="forms">
+
+        <div class="login-form logs">
+
+            <form id="login1" action="#">
+
+                <div onclick="close()" class="cancel icon-close">
+                    <span><i id="xmark"  class="fa-solid fa-xmark"></i></span>
+                </div>
+
+                <h2>LOGIN</h2>
+
+                <div class="input">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <!-- <label>Email</label> -->
+                    <input type="email" required placeholder="Enter your Email">
+                </div>
+
+                <div class="input">
+                    <span class="icon">
+                        <i class="fa-solid fa-lock"></i></span>
+                    <!-- <label>PassWord</label> -->
+                    <input type="password" required placeholder="Enter your Password">        
+                </div>
+
+                <div class="input1">
+                    <input type="checkbox">
+                    <label>Remember Me</label>
+                </div>
+
+                <button type="submit" class="form-login-btn">LOGIN</button>
+
+                <a class="forgot" href="#Forgot_PassWord">Forgot Password</a>
+
+                <div class="sign">
+                    <p>Don't have an account ?
+                        <a id="signUp" onclick="signUp()">Sign-Up Here</a>
+                    </p>
+                </div>
+
+            </form>
+
+        </div>
+        <form id="signin1" action="#">
+            <!-- <div class="cancel">
+                <span><i class="fa-solid fa-xmark"></i></span>
+            </div> -->
+            <h2>Sign-Up</h2>
+
+            <div class="sinput">
+                <span class="icon">
+                    <i class="fa-solid fa-user"></i> </span>
+                <!-- <label>Email</label> -->
+                <input type="text" required placeholder="Enter your Name">
+            </div>
+
+            <div class="sinput">
+                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                <!-- <label>Email</label> -->
+                <input type="email" required placeholder="Enter your Email">
+            </div>
+
+            <div class="sinput">
+                <span class="icon">
+                    <i class="fa-solid fa-lock"></i>
+                </span>
+                <!-- <label>PassWord</label> -->
+                <input type="password" required placeholder="Create a new Password">
+            </div>
+
+            <!-- <div class="sinput1">
+                <input type="checkbox">
+                <label>Remember Me</label>
+            </div> -->
+
+            <button type="submit" class="form-sign-btn">Sign  In</button>
+            <!-- <a class="forgot" href="#Forgot_PassWord">Forgot Password</a> -->
+            <div class="sign">
+                <p>Have an account ?
+                    <a id="logins" onclick="login()">Login</a>
+                </p>
+            </div>
+        </form>
+
+    </div>        
+
+           
+        </section>
+
+
+            <section class="section2" id="ABOUT">
+                <h1>About</h1>
+                <div class="firstinfo">
+                    <img src="store.jpg" width="300px" height="200px" alt="">
+                    <aside>
+                        <pre>Hey Fellas, Welcome to our Grocery store.
+Hope you all are doing good <i class="fa-solid fa-heart"></i> 
+We love to share some of Infos about our store. 
+This store started on 15 August 2018 by a small family to deliver fresh daily needs</pre></aside>
+                </div>
+
+                <div class="secinfo">
+                    <aside>
+                        <pre>Currently we have spread our business across the state same in some cities.
+To make a grocery shopping esear we have introduced online mode,
+so that items can reach customer as fresh.
+If you come across with any issue feel free to contact us below in the contact section.
+                        </pre></aside>
+                        <img src="storein.jpg" width="300px" height="200px" alt="">
+                </div>
+            </section>
+
+            <section class="section3" id="CONTACT">
+                <h1>Contact</h1>
+                <div class="contactinfo">
+                    <label>Name : <input type="text" placeholder="Your Name"></label>
+
+                    <label>Email : <input type="email" placeholder="Your Email"></label>
+
+                    <label>P.No : <input type="number" placeholder="Phone Number"></label>
+
+                    <label>Feedback : <input type="textarea" placeholder="Your Comments" row="4" cols="30"></label>
+                </div>
+            </section>
+
+
+            
+            <script>
+                const wrapper = document.querySelector('.forms');
+                const loginLink =document.getElementById('login1');
+                const registerLink =document.getElementById('signin1');
+                const btnPopup = document.querySelector('.btnLogin-popup');
+                const iconClose = document.querySelector('.icon-close');
+
+                const signUp = () =>{
+                    registerLink.style.display = "block";
+                    loginLink.style.display = "none";
+                };
+
+                const login = () => {
+                    
+                    registerLink.style.display = "none";
+                    loginLink.style.display = "block";
+                };
+
+                const close=() =>{
+                    alert("Hi")
+                    registerLink.style.display = "none";
+                    loginLink.style.display = "none";
+                }
+                // registerLink.addEventListener('click', ()=> {
+                // wrapper.classList.add('active');
+                // });
+                // loginLink.addEventListener('click', ()=> {
+                // wrapper.classList.remove('active');
+                // });
+                btnPopup.addEventListener('click', ()=> {
+                wrapper.classList.add('active-popup');
+                });
+
+                iconClose.addEventListener('click', ()=> {
+                wrapper.classList.remove('active-popup');
+                });
+
+                btnPopup.addEventListener('click', ()=> {
+                wrapper.classList.add('active-popup');
+                });
+
+                iconClose.addEventListener('click', ()=> {
+                wrapper.classList.remove('active-popup');
+                });
+            </script>
+
+            <script href="web.js"></script>
+<script href="Web.js"></script>
+
+</body>
+</html>

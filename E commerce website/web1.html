@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery page</title>
+    <link rel="stylesheet" href="web1.css">
+    
+    <script src="https://kit.fontawesome.com/e156c2aed2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="conatiner">
+    <header class="header">
+        <span class="greet"><i class="fa-solid fa-user-large"></i>Hey there, have a happy shopping <i class="fa-solid fa-face-smiling-hands fa-bounce"></i></span>
+        <div class="search-bar">
+            <form>
+                <input type="text" placeholder="Type here to search items">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+            </form>
+        </div>
+
+        <div class="icons">
+            <!-- <div id="cart-btn" class="fa-solid fa-cart-shopping"></div>
+            <div id="menu-btn" class="fa-solid fa-bars"></div> -->
+            
+            <i href="#" class="fa-solid fa-heart"></i>
+            <i href="#" class="fa-solid fa-cart-shopping"><label id="badge">0</label></i>
+            <i href="#" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="list">
+
+    </div>
+
+    <div class="card">
+        <h1>Cart</h1>
+        <ul class="listcard"></ul>
+        <div class="checkout">
+            <div class="total">0</div>
+            <div class="closeshopping">Close</div>
+        </div>
+    </div>
+</div>
+
+        <section class="items">
+            <h1 class="pros">PRODUCTS</h1>
+            
+            
+            <div class="maindiv">
+
+                <div class="box">
+                    <h3>Tomato</h3>
+                    <img src="tomatoes-320860_1280.jpg" width="200px" height="200px" alt="Tomato">
+                        <div class="card-details">
+                            <span>40 Rs /KG</span>
+                            <i class="fas fa-shopping-cart" id="p1"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                </div>
+
+                    <div class="box">
+                        <h3>Apple</h3>
+                        <img src="apple.jpg" width="200px" height="200px" alt="Broom">
+                        <div class="card-details">
+                            <span>120 Rs /KG</span>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h3>Eggs</h3>
+                        <img src="pexels-polina-tankilevitch-4110226.jpg" width="200px" height="200px" alt="Broom">
+                        <div class="card-details">
+                            <span>72 Rs/ Dozzen</span>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h3>Pork Belly</h3>
+                        <img src="pork-belly-1122171_1280.jpg" width="200px" height="200px" alt="Meat">
+                        <div class="card-details">
+                            <span>400 Rs /KG</span>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h3>Milk</h3>
+                        <img src="milk-1887234_1280.jpg" width="200px" height="200px" alt="Milk">
+                        <div class="card-details">
+                            <span>20 Rs 1/2 LTR</span>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h3>Butter</h3>
+                        <img src="butter.jpg" width="200px" height="200px" alt="Broom">
+                        <div class="card-details">
+                            <span>60 Rs/Pack</span>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h3>Bread</h3>
+                        <img src="bread.jpg" width="200px" height="200px" alt="Broom">
+                        <div class="card-details">
+                            <span>20 Rs/ pack</span>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h3>Banana</h3>
+                        <img src="banana.jpg" width="200px" height="200px" alt="Broom">
+                        <div class="card-details">
+                            <span>60 Rs/KG</span>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h3>Chocolates</h3>
+                        <img src="cake-pops-693645_1280.jpg" width="200px" height="200px" alt="Chocolates">
+                        <div class="card-details">
+                            <span>40 Rs/Box</span>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+            </div>
+        </section> 
+        <!-- <script>
+        //     const addcart=document.getElementById('p1');
+            const cart=document.getElementById('badge');
+
+        // addcart.addEventListener('click', () =>{
+        //     alert('hjbj');
+        //     cart.innerHTML=++1;
+        //     })
+            let cart1 = 0;
+            const counter = ()=>{
+                cart1++;
+                cart.innerText = cart1;
+            };
+        </script> -->
+        <script src="web1.js" async></script>
+</body>
+</html>

@@ -1,9 +1,7 @@
-img{display:block;
-
-height:auto;
-justify-content:center;
-text-align:center;
-margin:auto;}
+img{ display:flex;
+    justify-content: center;
+    width:100%;
+    align-items: center;}
 
 h1,p{text-align: center;}
 
@@ -15,7 +13,7 @@ height:700px;
 font-size: 20px;
 }
 
-#tribute-info{text-align: center;}
+#tribute-info{text-align: center;margin-top:auto ;}
 
 #three{
     justify-content: center;
@@ -35,3 +33,9 @@ hr{border-color: black;}
 h2{font-size: 180%;}
 
 nav{font-size: 140%;}
+
+@media screen and(max-width:500px){
+    img{
+        display:flex;justify-content: center;width:100%;align-items: center;
+    }
+}
