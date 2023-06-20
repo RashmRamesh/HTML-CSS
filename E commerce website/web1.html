@@ -24,25 +24,30 @@
             <div id="menu-btn" class="fa-solid fa-bars"></div> -->
             
             <i href="#" class="fa-solid fa-heart"></i>
-            <i href="#" class="fa-solid fa-cart-shopping"><label id="badge">0</label></i>
+            <i href="#" onclick="clickshop()" class="fa-solid fa-cart-shopping"><label id="badge">0</label></i>
             <i href="#" class="fa-solid fa-bars"></i>
         </div>
     </header>
 
-    <div class="list">
+    
+    <section class="items">
+        <h1 class="pros">PRODUCTS</h1>
+        <div class="list maindiv">
 
-    </div>
+        </div>
+
+    </section>
 
     <div class="card">
         <h1>Cart</h1>
         <ul class="listcard"></ul>
         <div class="checkout">
             <div class="total">0</div>
-            <div class="closeshopping">Close</div>
+            <div class="closeshopping" onclick="closeshop()">Close</div>
         </div>
     </div>
 </div>
-
+<!-- 
         <section class="items">
             <h1 class="pros">PRODUCTS</h1>
             
@@ -131,7 +136,7 @@
                             <i class="fas fa-heart"></i>
                         </div>
             </div>
-        </section> 
+        </section>  -->
         <!-- <script>
         //     const addcart=document.getElementById('p1');
             const cart=document.getElementById('badge');
